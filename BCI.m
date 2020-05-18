@@ -17,7 +17,7 @@ for index = 1:length(frequency_scopes)
     figure;
     plot(band_power_of_rest_data(1, :), band_power_of_rest_data(2, :), 'ro',...
          band_power_of_task_data(1, :), band_power_of_task_data(2, :), 'bo');
-    title(compose("Data's scatter plot at %d ~ %d Hz", start_frequency, end_frequency));
+    title(compose("Data's band power at %d ~ %d Hz", start_frequency, end_frequency));
     legend('rest', 'test');
     xlabel('F7');
     ylabel('F8');
