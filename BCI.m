@@ -37,12 +37,12 @@ end
 
 
 function [rest_data, task_data] = get_data()
-    # path setting
+    % path setting
     current_folder_path = pwd; % pwd is meant current folder
     eeglab_path = [current_folder_path, '\eeglab14_1_1b\eeglab.m'];
     data_path = [current_folder_path, '\data\ARTRED.CNT'];
     
-    # TA provided, and we could get rest_data and task data by this function
+    % TA provided, and we could get rest_data and task data by this function
     rest_data = cut(data_path, eeglab_path, current_folder_path, 'rest', '11');
     task_data = cut(data_path, eeglab_path, current_folder_path, 'task', '21');
 end
